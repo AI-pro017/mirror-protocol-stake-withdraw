@@ -254,5 +254,5 @@ const queryPool = async (network, mAssetType, accAddress) => {
 }
 
 queryPool("testnet", "mAAPL", "terra1jtzse4nezpkg2k86nkxrwxchaykpxs827ymswn")
-// autoStake("question solar spread moral novel rival diet turtle royal tree armor ozone dish enough electric job slogan snow occur spray volcano aisle strong fiction", "testnet", 0.1, "mAAPL", 1);
-// withdraw("question solar spread moral novel rival diet turtle royal tree armor ozone dish enough electric job slogan snow occur spray volcano aisle strong fiction", "testnet", 1, "mAAPL");
+// autoStake("<your 24 word mnemonic>", "testnet", 0.1, "mAAPL", 1);
+// withdraw("<your 24 word mnemonic>", "testnet", 1, "mAAPL");
