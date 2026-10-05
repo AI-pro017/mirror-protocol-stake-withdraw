@@ -29,13 +29,13 @@ cd mirror-protocol-stake-withdraw
 npm install
 ```
 
-Edit the calls at the bottom of `index.js` (pick the function, network, amount and mAsset) and run:
+Pick the call you want at the bottom of `index.js` (function, network, amount and mAsset), then pass your wallet mnemonic through the `MNEMONIC` environment variable:
 
 ```bash
-node index.js
+MNEMONIC="word1 word2 ... word24" node index.js
 ```
 
-Keep your mnemonic out of the file when you commit. An environment variable is the safer place for it.
+The mnemonic is never written into the code, and `.env` files are ignored by git.
 
 ## Status
 

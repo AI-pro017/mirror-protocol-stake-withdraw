@@ -253,6 +253,10 @@ const queryPool = async (network, mAssetType, accAddress) => {
 
 }
 
+// The wallet mnemonic comes from the environment so it never ends up in the code:
+//   MNEMONIC="word1 word2 ..." node index.js
+const MNEMONIC = process.env.MNEMONIC;
+
 queryPool("testnet", "mAAPL", "terra1jtzse4nezpkg2k86nkxrwxchaykpxs827ymswn")
-// autoStake("<your 24 word mnemonic>", "testnet", 0.1, "mAAPL", 1);
-// withdraw("<your 24 word mnemonic>", "testnet", 1, "mAAPL");
+// autoStake(MNEMONIC, "testnet", 0.1, "mAAPL", 1);
+// withdraw(MNEMONIC, "testnet", 1, "mAAPL");
